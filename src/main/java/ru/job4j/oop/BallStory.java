@@ -6,11 +6,11 @@ public class BallStory {
         Hare hare = new Hare();
         Wolf wolf = new Wolf();
         Fox fox = new Fox();
-        Hare.DontEat(ball);
-        Ball.GoAway(hare);
-        Wolf.DontEat(ball);
-        Ball.GoAway(wolf);
+        Hare.dontEat(ball);
+        Ball.goAway(hare);
+        Wolf.dontEat(ball);
+        Ball.goAway(wolf);
         Fox.eat(ball);
-        Ball.DontGoAway(fox);
+        Ball.dontGoAway(fox);
     }
 }

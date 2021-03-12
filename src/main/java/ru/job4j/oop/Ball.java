@@ -1,10 +1,10 @@
 package ru.job4j.oop;
 
 public class Ball {
-    public static void GoAway (Hare hare) {
+    public static void goAway (Hare hare) {
     }
-    public static void GoAway (Wolf wolf) {
+    public static void goAway (Wolf wolf) {
     }
-    public static void DontGoAway (Fox fox) {
+    public static void dontGoAway (Fox fox) {
     }
 }
