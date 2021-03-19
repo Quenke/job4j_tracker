@@ -6,8 +6,8 @@ public class DummyDic {
     }
     public static void main(String[] args) {
         DummyDic translation = new DummyDic();
-        String eng = translation.toString();
-        System.out.println("What a code O_o " + eng);
+        String eng = translation.engToRus("something word");
+        System.out.println(eng);
     }
 }
 
