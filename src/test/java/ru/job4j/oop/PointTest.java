@@ -12,13 +12,15 @@ public class PointTest {
         Point a = new Point(0, 0);
         Point b = new Point(0, 0);
         double rsl = a.distance(b);
-        assertThat(rsl, closeTo(0, 0.001));
+        double expected = 0;
+        assertEquals(expected, rsl ,0.01 );
     }
     @Test
     public void distanceWhen1() {
         Point a = new Point(1, 1);
         Point b = new Point(1, 1);
         double rsl = a.distance(b);
-        assertThat(rsl, closeTo(0, 0.001));
+        double expected = 0;
+        assertEquals(expected, rsl ,0.01 );
     }
 }
