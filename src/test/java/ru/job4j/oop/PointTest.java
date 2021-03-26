@@ -23,4 +23,28 @@ public class PointTest {
         double expected = 0;
         assertEquals(expected, rsl ,0.01 );
     }
+    @Test
+    public void distanceWhenSqrt8() {
+        Point a = new Point(6, 7);
+        Point b = new Point(4, 5);
+        double rsl = a.distance(b);
+        double expected = 2.828;
+        assertEquals(expected, rsl ,0.01 );
+    }
+    @Test
+    public void distanceWhenSqrt2() {
+        Point a = new Point(3, 5);
+        Point b = new Point(2, 4);
+        double rsl = a.distance(b);
+        double expected = 1.414;
+        assertEquals(expected, rsl ,0.01 );
+    }
+    @Test
+    public void distanceWhenSqrt16() {
+        Point a = new Point(1, 8);
+        Point b = new Point(1, 4);
+        double rsl = a.distance(b);
+        double expected = 4;
+        assertEquals(expected, rsl ,0.01 );
+    }
 }
