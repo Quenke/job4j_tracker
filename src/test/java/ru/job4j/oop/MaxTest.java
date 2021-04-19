@@ -8,8 +8,8 @@ import static org.junit.Assert.*;
 public class MaxTest {
     @Test
     public void whenMax1To2Then2() {
-        int result = Max.max(1, 2);
-        assertThat(result, is(2));
+        int result = Max.max(1, 2, 154, 9);
+        assertThat(result, is(154));
     }
     @Test
     public void whenMax3To2Then1() {
@@ -26,5 +26,6 @@ public class MaxTest {
         int result = Max.max(455, 333);
         assertThat(result, is(455));
     }
+
 }
 
