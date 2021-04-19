@@ -13,19 +13,18 @@ public class MaxTest {
     }
     @Test
     public void whenMax3To2Then1() {
-        int result = Max.max(3, 1,6);
+        int result = Max.max(3, 1, 6,0);
         assertThat(result, is(6));
     }
     @Test
     public void whenMax15To2Then105() {
-        int result = Max.max(15, 105,0);
+        int result = Max.max(15, 105,0, 1);
         assertThat(result, is(105));
     }
     @Test
     public void whenMax455To2Then333() {
-        int result = Max.max(455, 333);
+        int result = Max.max(455, 333, 1, 2);
         assertThat(result, is(455));
     }
-
 }
 
