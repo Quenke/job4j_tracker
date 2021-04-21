@@ -47,4 +47,21 @@ public class PointTest {
         double expected = 4;
         assertEquals(expected, rsl ,0.01 );
     }
+
+    @Test
+    public void distanceWhenSqrt25ThreeD() {
+        Point c = new Point(5, 0, 3);
+        Point d = new Point(1, 0, 0);
+        double rsl = c.distance3d(d);
+        double expected = 5;
+        assertEquals(expected, rsl ,0.01 );
+    }
+    @Test
+    public void distanceWhenSqrt100ThreeD() {
+        Point c = new Point(1, 12, 9);
+        Point d = new Point(1, 4, 3);
+        double rsl = c.distance3d(d);
+        double expected = 10;
+        assertEquals(expected, rsl ,0.01 );
+    }
 }
