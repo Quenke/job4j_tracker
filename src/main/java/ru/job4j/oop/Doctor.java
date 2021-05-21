@@ -1,9 +1,11 @@
 package ru.job4j.oop;
 
-public class Engineer {
+import javax.print.Doc;
+
+public class Doctor {
     private String major;
 
-    public Engineer(String major) {
+    public Doctor(String major) {
         this.major = major;
     }
 
@@ -12,10 +14,7 @@ public class Engineer {
     }
 
     public static void main(String[] args) {
-        Engineer engineer = new Engineer("Programmer");
-        Engineer engineer1 = new Engineer("Builder");
+        Doctor doctor = new Doctor("Dentist");
+        Doctor doctor1 = new Doctor("Surgeon");
     }
-
 }
-
-
