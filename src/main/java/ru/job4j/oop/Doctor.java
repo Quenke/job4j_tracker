@@ -2,19 +2,15 @@ package ru.job4j.oop;
 
 import javax.print.Doc;
 
-public class Doctor {
-    private String major;
+public class Doctor extends Profession {
 
-    public Doctor(String major) {
-        this.major = major;
+    public Doctor(String name, String surname, String education, int birthday) {
+        super(name, surname, education, birthday);
     }
 
-    public String getMajor() {
-        return major;
-    }
 
     public static void main(String[] args) {
-        Doctor doctor = new Doctor("Dentist");
-        Doctor doctor1 = new Doctor("Surgeon");
+        Doctor doctor = new Doctor("1");
+
     }
 }
