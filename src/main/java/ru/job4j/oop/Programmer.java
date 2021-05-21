@@ -1,8 +1,11 @@
 package ru.job4j.oop;
 
 public class Programmer extends Engineer{
-    public Programmer(String name, String surname, String education, int birthday) {
-        super(name, surname, education, birthday);
+   public String code;
+
+    public Programmer(String name, String surname, String education, int birthday, String major, String code) {
+        super(name, surname, education, birthday, major);
+        this.code = code;
     }
 
     public static void main(String[] args) {
