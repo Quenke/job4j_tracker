@@ -4,7 +4,7 @@ import ru.job4j.math.MathFunction;
 
 public class MathCalculator {
     public static double sumAndMultiply(double first, double second) {
-        return ru.job4j.math.MathFunction.sum(first, second)
+        return sum(first, second)
                 + ru.job4j.math.MathFunction.multiply(first, second);
     }
     public static double subtractionAndDivision(double first, double second) {
@@ -12,8 +12,8 @@ public class MathCalculator {
                 + ru.job4j.math.MathFunction.division(first, second);
     }
     public static double sumAndMultiplyAndSubAndDiv(double first, double second) {
-        return MathCalculator.sumAndMultiply(first, second)
-                + MathCalculator.subtractionAndDivision(first, second);
+        return sumAndMultiply(first, second)
+              + subtractionAndDivision(first, second);
 
     }
 
