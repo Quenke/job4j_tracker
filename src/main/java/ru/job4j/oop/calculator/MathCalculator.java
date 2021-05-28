@@ -12,10 +12,9 @@ public class MathCalculator {
                 + ru.job4j.math.MathFunction.division(first, second);
     }
     public static double sumAndMultiplyAndSubAndDiv(double first, double second) {
-        return ru.job4j.math.MathFunction.sum(first, second)
-                + ru.job4j.math.MathFunction.multiply(first, second)
-                + ru.job4j.math.MathFunction.subtraction(first, second)
-                + ru.job4j.math.MathFunction.division(first, second);
+        return MathCalculator.sumAndMultiply(first, second)
+                + MathCalculator.subtractionAndDivision(first, second);
+
     }
 
     public static void main(String[] args) {
