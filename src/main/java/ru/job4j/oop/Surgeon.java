@@ -8,6 +8,10 @@ public class Surgeon extends Doctor{
         this.patient = patient;
     }
 
+    public Surgeon() {
+
+    }
+
     public static void main(String[] args) {
         Surgeon surgeon = new Surgeon();
     }

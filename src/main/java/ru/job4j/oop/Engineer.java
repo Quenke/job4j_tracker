@@ -12,6 +12,10 @@ public class Engineer extends Profession {
         super(name, surname, education, birthday);
     }
 
+    public Engineer() {
+        super();
+    }
+
     public String getMajor() {
         return major;
     }

@@ -10,6 +10,10 @@ public class Doctor extends Profession {
         this.speciality = speciality;
     }
 
+    public Doctor() {
+
+    }
+
     public String getSpeciality() {
         return speciality;
     }

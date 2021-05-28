@@ -8,6 +8,10 @@ public class Dentist extends Doctor{
         this.workingHours = workingHours;
     }
 
+    public Dentist() {
+
+    }
+
     public static void main(String[] args) {
         Dentist dentist = new Dentist();
     }

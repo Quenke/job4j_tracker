@@ -8,6 +8,10 @@ public class Builder extends Engineer{
         this.tool = tool;
     }
 
+    public Builder() {
+
+    }
+
     public static void main(String[] args) {
         Builder builder = new Builder();
     }

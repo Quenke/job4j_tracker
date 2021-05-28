@@ -8,6 +8,10 @@ public class Programmer extends Engineer{
         this.code = code;
     }
 
+    public Programmer() {
+
+    }
+
     public static void main(String[] args) {
         Programmer programmer = new Programmer();
     }
