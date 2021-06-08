@@ -15,14 +15,16 @@ public class Library {
             Book bs = books[index];
             System.out.println(bs.getName() + " - " + bs.getPages());
         }
+        Book temp = books[3];
+        books[3] = books[0];
+        books[0] = temp;
+
         System.out.println("Поменять местами 0 и 3 ячейки");
-            for (int index1 = 0; index1 < books.length; index1++) {
-                Book bsChange = books[index1];
-                Book temp = books[3];
-                books[3] = books[0];
-                books[0] = temp;
-                System.out.println(bsChange.getName() + " - " + bsChange.getPages());
-            }
+        for (int index1 = 0; index1 < books.length; index1++) {
+            Book bsChange = books[index1];
+            System.out.println(bsChange.getName() + " - " + bsChange.getPages());
+        }
+
         System.out.println("Вывод на экран только книгу с названием Clean code");
         for (int index2 = 0; index2 < books.length; index2++) {
             Book bsEqual = books[index2];
