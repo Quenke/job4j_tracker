@@ -15,19 +15,19 @@ public class Library {
             Book bs = books[index];
             System.out.println(bs.getName() + " - " + bs.getPages());
         }
-            System.out.println("Поменять местами 0 и 3");
-            for (int index1 = 0; index1 < books.length; index1++) {
-                Book bsChange = books[index1];
-                Book temp = books[0];
-                books[0] = books[books.length - 1];
-                books[books.length - 1] = temp;
-                System.out.println(bsChange.getName() + " - " + bsChange.getPages());
+            for (int index = 0; index < books.length; index++) {
+                Book bs = books[index];
+                Book temp = books[3];
+                books[3] = books[0];
+                books[0] = temp;
+                System.out.println(bs.getName() + " - " + bs.getPages());
             }
-            System.out.println("Вывести только Clean code");
-            for (int index2 = 0; index2 < books.length; index2++) {
-                Book bsEqual = books[index2];
-                System.out.println();
+        for (int index2 = 0; index2 < books.length; index2++) {
+            Book bsEqual = books[index2];
+            if (bsEqual.getName().equals("Clean code")) {
+                System.out.println(bsEqual.getName() + " - " + bsEqual.getPages());
             }
+        }
 
     }
 }
