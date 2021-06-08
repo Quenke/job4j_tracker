@@ -20,14 +20,14 @@ public class Library {
         books[0] = temp;
 
         System.out.println("Поменять местами 0 и 3 ячейки");
-        for (int index1 = 0; index1 < books.length; index1++) {
-            Book bsChange = books[index1];
+        for (int index = 0; index < books.length; index++) {
+            Book bsChange = books[index];
             System.out.println(bsChange.getName() + " - " + bsChange.getPages());
         }
 
         System.out.println("Вывод на экран только книгу с названием Clean code");
-        for (int index2 = 0; index2 < books.length; index2++) {
-            Book bsEqual = books[index2];
+        for (int index = 0; index < books.length; index++) {
+            Book bsEqual = books[index];
             if (bsEqual.getName().equals("Clean code")) {
                 System.out.println(bsEqual.getName() + " - " + bsEqual.getPages());
             }
