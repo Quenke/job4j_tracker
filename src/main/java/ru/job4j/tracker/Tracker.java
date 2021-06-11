@@ -22,4 +22,14 @@ public class Tracker {
         }
         return rsl;
     }
+
+    public Item[] findAll(){
+        return items;
+    }
+
+    public Item[] findByName(String key){
+        return items;
+    }
+
+
 }
