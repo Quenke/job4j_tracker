@@ -36,13 +36,8 @@ public class Tracker {
             if (items[index].getName().equals(key)) {
                 rsl[count++] = items[index];
             }
-            for (index = 0; index < size; index++) {
-                if (items[index] != null) {
-                   rsl[count] = items[index];
-                }
-            }
         }
-        return items;
+        return Arrays.copyOf(rsl, count );
     }
 }
 
